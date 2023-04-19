@@ -1,10 +1,4 @@
 import streamlit as st
 
-genre = st.radio(
-    "What\'s your favorite movie genre",
-    ('Comedy', 'Drama', 'Documentary'))
-
-if genre == 'Comedy':
-    st.write('You selected comedy.')
-else:
-    st.write("You didn\'t select comedy.")
+color = st.color_picker('Pick A Color', '#00f900')
+st.write('The current color is', color)
